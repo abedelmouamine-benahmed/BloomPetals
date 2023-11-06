@@ -1,0 +1,128 @@
+/*---------------Menu--------------*/
+.menu {
+    
+    display: flex;    
+    justify-content: center;
+    background-color: rgba(224,179,179,1);
+    gap: 3rem;
+    list-style-type: none;/*enleve les puces(les points degeu par defaut)*/
+    height: 3.5rem;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.lien {
+
+    color: rgb(255, 255, 255); 
+    text-decoration: none; /*enleve le soulignage degeu de l'hyperlien*/
+
+}
+
+.lien:hover{/*petite transition lorsque la souris passe sur un hyperlien*/
+
+    
+    color: rgb(255, 65, 65);
+    border-color: rgb(255, 255, 255);
+
+}
+/*----------------body------------*/
+
+.TitreEntreprise{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.description{
+
+    display:flex;
+    text-align:center;
+    font-size: larger;
+}
+
+.Body{
+    display :flex;
+    justify-content: center;
+}
+
+.Carrousel_Photo_Equipe{
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    8.33% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    16.66% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    24.99% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    33.32% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 15vh;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+     animation: display 20s infinite; 
+  }
+  
+img:nth-child(2) {
+  animation-delay: 3.32s;
+}
+img:nth-child(3) {
+  animation-delay: 6.66s;
+}
+img:nth-child(4) {
+  animation-delay: 10s;
+}
+img:nth-child(5) {
+  animation-delay: 13.32s;
+}
+img:nth-child(6) {
+  animation-delay: 16.66s;
+}
+/* ------------Pied de page------------------ */
+
+
+footer{
+    
+    background-color:rgba(224,179,179,1);
+    height: 3.5rem;
+    margin-bottom:0;
+    margin-top: 10%;
+}
+

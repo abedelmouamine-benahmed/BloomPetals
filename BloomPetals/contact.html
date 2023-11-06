@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="contact.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrique-Contact</title>
+</head>
+<header>
+    
+    <nav class="menu">
+        
+        <a href="index.html" class="lien">Home</a>
+    
+        <a href="entreprise.html" class="lien">Entreprise</a>
+    
+        <a href="realisations.html" class="lien">Réalisations</a>
+    
+        <a href="contact.html" class="lien">Contact</a>
+        
+    </nav>  
+
+</header> 
+
+<body>
+    <main class="Body">
+        <section class="container">
+            <h1>Contactez-nous</h1>
+            <form action="/action_page.php" method="post">
+                <label for="civilite">Civilité :</label>
+                <select id="civilite" name="civilite" required>
+                    <option value="monsieur">Monsieur</option>
+                    <option value="madame">Madame</option>
+                </select>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+                <label for="adresse">Adresse postale :</label>
+                <textarea id="adresse" name="adresse" placeholder="Votre adresse" required></textarea>
+
+                <label for="confidentialite">
+                    <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                    J'accepte les politiques de confidentialité de l'entreprise.
+                </label>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>  
+    </main>
+</body>
+<footer></footer>
+
+</html>

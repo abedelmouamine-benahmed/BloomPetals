@@ -1,0 +1,64 @@
+/*---------------Menu--------------*/
+.menu {
+    
+    display: flex;    
+    justify-content: center;
+    background-color: rgba(224,179,179,1);
+    gap: 3rem;
+    list-style-type: none;/*enleve les puces(les points degeu par defaut)*/
+    height: 3.5rem;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.lien {
+
+    color: rgb(255, 255, 255); 
+    text-decoration: none; /*enleve le soulignage degeu de l'hyperlien*/
+
+}
+
+.lien:hover{/*petite transition lorsque la souris passe sur un hyperlien*/
+
+    
+    color: rgb(255, 65, 65);
+    border-color: rgb(255, 255, 255);
+
+}
+/*----------------body------------*/
+.mosaic {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Photo {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+    
+  }
+  
+  .Photo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .mosaic:hover .Photo:not(:hover) {
+    transform: scale(0.8);
+  }
+  
+  .mosaic:hover .Photo:hover {
+    transform: scale(1.0);
+  }
+  
+  
+footer{
+    
+    background-color:rgba(224,179,179,1);
+    height: 3.5rem;
+
+}
